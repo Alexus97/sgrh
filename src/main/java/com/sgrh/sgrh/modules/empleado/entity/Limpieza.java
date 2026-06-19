@@ -2,6 +2,7 @@ package com.sgrh.sgrh.modules.empleado.entity;
 
 import java.time.LocalDate;
 
+import com.sgrh.sgrh.modules.admin.entity.Estado;
 import com.sgrh.sgrh.modules.admin.entity.Habitacion;
 
 import jakarta.persistence.Column;
@@ -29,7 +30,7 @@ import lombok.NoArgsConstructor;
 public class Limpieza {
 
 
-     @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_limpieza")
     private Integer idLimpieza;
@@ -40,7 +41,7 @@ public class Limpieza {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_empleado", nullable = false)
-    private Empleado empleado;
+    private Estado empleado;
 
     @Column(name = "fecha", nullable = false)
     private LocalDate fecha;

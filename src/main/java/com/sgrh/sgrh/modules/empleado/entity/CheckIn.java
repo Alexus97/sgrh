@@ -2,6 +2,8 @@ package com.sgrh.sgrh.modules.empleado.entity;
 
 import java.time.LocalDateTime;
 
+import com.sgrh.sgrh.modules.client.entity.Reserva;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
